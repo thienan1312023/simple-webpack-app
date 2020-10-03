@@ -2,7 +2,7 @@ em {
     font-weight: bold;
     color: blue;
 }
-.search-container {
+.search-results-container {
     display: flex;
     flex-direction: column;
     justify-content: center;

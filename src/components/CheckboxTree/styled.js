@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const getPaddingLeft = (level) => {
-    let paddingLeft = level * 30;
-    return paddingLeft;
+  let paddingLeft = level * 30;
+  return paddingLeft;
 }
 
 
@@ -16,15 +16,12 @@ export const StyledTreeNode = styled.div`
 `;
 
 export const StyledCheckboxTree = styled.div`
-  width: 800px;
-  max-width: 100%;
-  margin: 0 auto;
-  display: flex;  
-  border-radius: 10px;
-  background-color: #b1d2ea;
-  padding: 20px;
+  background-color:  rgb(108 179 218);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 export const TreeWrapper = styled.div`
-  width: 250px;
+  padding: 20px;
 `;

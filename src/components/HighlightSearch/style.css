@@ -11,3 +11,9 @@ input {
     color: #000000;
 }
 
+.search-container{
+    background-color: rgb(33 70 90);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}

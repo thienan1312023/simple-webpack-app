@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         chunkFilename: '[id].js',
-        publicPath: ''
+        publicPath: '/',
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -37,5 +37,8 @@ module.exports = {
             filename: 'index.html',
             inject: 'body'
         })
-    ]
+    ],
+    devServer: {
+        historyApiFallback: true
+    }
 };

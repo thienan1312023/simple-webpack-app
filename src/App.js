@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, {useState, useEffect}  from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,17 +11,21 @@ import HighlightSearch from "./components/HighlightSearch";
 
 
 function App() {
+  const {isSelectedValue, setIsSelectedValue} = useState('');
+  const handleSelectedTab = (tabValue) => {
+    setIsSelectedValue(tabValue);
+  }
   return (
     <div className="App">
       <Router>
         <div>
         <nav>
           <div className="navigation-bar">
-            <div>
-              <Link to="/checkbox-tree">Checkbox tree</Link>
+            <div onClick={() => handleSelectedTab('checkboxTree') }>
+              <Link to="/checkbox-tree" className="navigation-bar__item">Checkbox tree</Link>
             </div>
-            <div>
-              <Link to="/highlight-search">Highlight search</Link>
+            <div onClick={() => handleSelectedTab('highlightSearch') }>
+              <Link to="/highlight-search" className="navigation-bar__item">Highlight search</Link>
             </div>
           </div>
         </nav>

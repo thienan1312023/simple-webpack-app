@@ -8,8 +8,11 @@ const SearchText = () => {
 
     return (
         <>
-            <SearchBar />
-            <Results />
+            <div className="search-container">
+                <SearchBar />
+                <Results />
+            </div>
+
         </>
     );
 };

@@ -10,7 +10,7 @@ export const Results = () => {
     const results = useSelector(state => state.searchResults);
     const loading = useSelector(state => state.loading);
     return (
-        <div className="search-container">
+        <div className="search-results-container">
             <BeatLoader
                 size={15}
                 margin={2}
