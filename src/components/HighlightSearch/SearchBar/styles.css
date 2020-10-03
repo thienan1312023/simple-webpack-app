@@ -1,0 +1,27 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.search {
+    width: 740px;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    padding: 10px 20px;
+    height: 20px;
+    border-radius: 20px;
+    outline: none;
+    color: #000000;
+}
+
+input {
+    padding: 5px 72px 5px 15px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    color: #000;
+    border: 1px solid #d3d3d3;
+}
