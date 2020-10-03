@@ -11,7 +11,7 @@ import HighlightSearch from "./components/HighlightSearch";
 
 
 function App() {
-  const {isSelectedValue, setIsSelectedValue} = useState('');
+  const [isSelectedValue, setIsSelectedValue] = useState('');
   const handleSelectedTab = (tabValue) => {
     setIsSelectedValue(tabValue);
   }
@@ -22,10 +22,10 @@ function App() {
         <nav>
           <div className="navigation-bar">
             <div onClick={() => handleSelectedTab('checkboxTree') }>
-              <Link to="/checkbox-tree" className="navigation-bar__item">Checkbox tree</Link>
+              <Link to="/checkbox-tree" className={`navigation-bar__item ${isSelectedValue === 'checkboxTree' ? 'checkbox-tree' : ''}`}>Checkbox tree</Link>
             </div>
             <div onClick={() => handleSelectedTab('highlightSearch') }>
-              <Link to="/highlight-search" className="navigation-bar__item">Highlight search</Link>
+              <Link to="/highlight-search" className={`navigation-bar__item ${isSelectedValue === 'highlightSearch' ? 'highlight-search' : ''}`}>Highlight search</Link>
             </div>
           </div>
         </nav>

@@ -15,8 +15,8 @@ const TreeNode = (props) => {
         <label className="checkbox-container">
           <input type="checkbox" checked={node?.selectedStatus === 'checked'} className={(node?.selectedStatus === 'checked' || node?.selectedStatus === 'partial') ? 'hide-checkbox' : 'show-checkbox'} onChange={(e) => onToggle(node)} />
           <span>
-            {node.selectedStatus === 'checked' && <span className="checkmark"><FaCheckSquare color="#31aa31"/></span>}
-            {node.selectedStatus === 'partial' && <span className="checkmark"><FaMinusSquare color="#d14242"/></span>}
+            {node.selectedStatus === 'checked' && <span className="checkmark"><FaCheckSquare color="rgb(33 105 33)"/></span>}
+            {node.selectedStatus === 'partial' && <span className="checkmark"><FaMinusSquare color="rgb(53 14 14)"/></span>}
             {getNodeLabel(node)}
           </span>
         </label>

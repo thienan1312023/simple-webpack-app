@@ -38,3 +38,13 @@
   color: #fb8558;
   border-color: #fb8558;
 }
+
+.navigation-bar__item.checkbox-tree{
+  color: #fb8558;
+  border-color: #fb8558;
+}
+
+.navigation-bar__item.highlight-search{
+  color: #fb8558;
+  border-color: #fb8558;
+}
