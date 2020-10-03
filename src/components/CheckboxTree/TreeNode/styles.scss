@@ -1,20 +1,19 @@
-.checkbox-container{
+.checkbox-container {
     display: flex;
-}
+    & > span {
+        margin-left: 5px;
+        text-transform: capitalize;
+    }
+    .show-checkbox {
+        display: block;
+    }
 
-.checkbox-container > span{
-    margin-left: 5px;
-    text-transform: capitalize;
-}
-.show-checkbox{
-    display: block;
-}
+    .hide-checkbox {
+        display: none;
+    }
 
-.hide-checkbox{
-    display: none;
-}
-
-input{
-    width: 15px;
-    height: 15px;
+    input {
+        width: 15px;
+        height: 15px;
+    }
 }

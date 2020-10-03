@@ -19,8 +19,8 @@ export const SearchBar = () => {
     }
     return (
         <div className="search-bar">
-            <div className="search">
-                <input type="text" className="searchTerm" value={searchValue} onChange={(e) => handleOnChangeInput(e)} placeholder="What are you looking for?" />
+            <div className="search-bar__input-container">
+                <input type="text" className="search-term" value={searchValue} onChange={(e) => handleOnChangeInput(e)} placeholder="What are you looking for?" />
             </div>
         </div>
     );
