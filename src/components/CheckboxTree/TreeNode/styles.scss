@@ -1,8 +1,12 @@
 .checkbox-container {
     display: flex;
+    cursor: pointer;
     & > span {
         margin-left: 5px;
         text-transform: capitalize;
+    }
+    &:hover{
+        color: #840884;
     }
     .show-checkbox {
         display: block;
