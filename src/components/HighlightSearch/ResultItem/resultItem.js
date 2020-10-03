@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import parse from 'html-react-parser';
-import './styles.css';
+import './styles.scss';
 export function ResultItem({ content, color }) {
     return (<div className="search-item"> {content && parse(content)}</div>)
 }

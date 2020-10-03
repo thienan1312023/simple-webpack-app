@@ -3,7 +3,7 @@ import { FaCheckSquare, FaMinusSquare } from 'react-icons/fa';
 import last from 'lodash/last';
 import PropTypes from 'prop-types';
 import { StyledTreeNode } from '../styled';
-import './styles.css';
+import './styles.scss';
 
 const getNodeLabel = (node) => last(node.path.split('/'));
 

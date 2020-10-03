@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import BeatLoader from "react-spinners/BeatLoader";
 import _ from 'lodash';
 import { ResultItem } from "../ResultItem";
-import './styles.css';
+import './styles.scss';
 
 
 export const Results = () => {

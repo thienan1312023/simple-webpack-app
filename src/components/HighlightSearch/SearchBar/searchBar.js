@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useDispatch } from "react-redux";
 import { getSearchData } from "../../../actions";
-import './styles.css';
+import './styles.scss';
 import _ from "lodash";
 
 export const SearchBar = () => {
